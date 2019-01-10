@@ -18,6 +18,17 @@ docker build -t flask-container .
 docker run -e FLASK_APP=app.py -e FLASK_DEBUG=0 -p 5000:5000 flask-container
 ```
 
+## Docker
+1. Install [Docker](https://www.docker.com/).
+2. Download flask-docker-container image from public [Docker Hub ](https://hub.docker.com/): 
+```
+docker pull mohamadrostami2/flask-docker-container
+```
+3. You can run them like below:
+```
+docker run -e FLASK_APP=app.py -e FLASK_DEBUG=0 -p 5000:5000 mohamadrostami2/flask-docker-container
+```
+
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
